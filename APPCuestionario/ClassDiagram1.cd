@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="APPCuestionario.Usuario">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAIEAAAAgAQAAAAAAgAIAAAQAAAEAAA=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPCuestionario.Cuestionario">
+    <Position X="3" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAQAAAAACAAAIAAAAABAgAAAAAIAAAAAQAwEhA=</HashCode>
+      <FileName>Cuestionario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPCuestionario.Pregunta">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAQQAAAAAAAAAAABAAAAAAAIAAAAEAAEAAA=</HashCode>
+      <FileName>Pregunta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPCuestionario.Alternativas">
+    <Position X="8.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIQAAQAQCAAAAAAAAABAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Alternativas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPCuestionario.EstadoDeCuestionario">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAABAAAAAAAIAAAAAACAAAA=</HashCode>
+      <FileName>EstadoDeCuestionario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
