@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="acadf707-a5ea-4002-bbfa-be464457c7ae"
+  name="casosdeuso" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="cacf7206-4ec7-4f15-8597-513504c4e7a7"
+        name="Usuario"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="606495dc-6664-4cf7-8919-2b3a4caa9409"
+            isDerived="false"
+            sourceEndRoleName="Usuario"
+            targetEndRoleName="Gestionar Usuario"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b23868aa-86b0-4868-a5a6-6bd769e1a4bc"
+              LastKnownName="Gestionar Usuario"
+              LastKnownLocation="casosdeuso.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d051899-914b-4cb9-8120-c22c15f434cb"
+                  name="Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6c7741bc-11b3-4848-82f3-725b4b07acf3"
+                  name="Gestionar Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="726a964a-cb15-4634-bbe7-017986cd36eb"
+            isDerived="false"
+            sourceEndRoleName="Usuario"
+            targetEndRoleName="Gestionar Cuestionario"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="59ed74ca-e877-44cc-a9ec-0716265bd912"
+              LastKnownName="Gestionar Cuestionario"
+              LastKnownLocation="casosdeuso.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b61227e2-383c-4a5f-86c3-ca5c9095ce83"
+                  name="Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca4ab788-fe08-4a70-9b14-9b981189a660"
+                  name="Gestionar Cuestionario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="221f3186-8bcd-4ea1-9c5a-d9aedbc92ea6"
+            isDerived="false"
+            sourceEndRoleName="Usuario"
+            targetEndRoleName="Gestionar Pregunta"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d6eae8ea-4ea3-4e2f-a650-a578bdea669e"
+              LastKnownName="Gestionar Pregunta"
+              LastKnownLocation="casosdeuso.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e9528582-08dd-4b26-a879-48f83c633292"
+                  name="Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c223c5b2-f829-49f6-92fb-ac71fc4c377e"
+                  name="Gestionar Pregunta"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1c3f735d-88cd-4979-9ea9-0fce94bf6199"
+            isDerived="false"
+            sourceEndRoleName="Usuario"
+            targetEndRoleName="Gestionar Alternativa"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="05cac6c3-feda-4a68-be8b-b7e7ade238a7"
+              LastKnownName="Gestionar Alternativa"
+              LastKnownLocation="casosdeuso.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c360863e-416e-4ee6-a2c1-485640be1827"
+                  name="Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="274ea255-d87b-4a9b-9d7b-e7dfbc56e04f"
+                  name="Gestionar Alternativa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b23868aa-86b0-4868-a5a6-6bd769e1a4bc"
+        name="Gestionar Usuario"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="59ed74ca-e877-44cc-a9ec-0716265bd912"
+        name="Gestionar Cuestionario"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d6eae8ea-4ea3-4e2f-a650-a578bdea669e"
+        name="Gestionar Pregunta"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="05cac6c3-feda-4a68-be8b-b7e7ade238a7"
+        name="Gestionar Alternativa"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="915f849f-3e96-45ed-ab49-98835c318f5b"
+        name="Actualizar Usuario"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="0a28d723-fd8e-4a36-9330-788c33dcbf10">
+            <useCaseMoniker
+              Id="b23868aa-86b0-4868-a5a6-6bd769e1a4bc"
+              LastKnownName="Gestionar Usuario"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="465c4c02-7504-40c7-90f9-3702e3d99e25"
+        name="Agregar Usuario"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c3be427b-b36a-49a4-a6cf-f7aea3d65627">
+            <useCaseMoniker
+              Id="b23868aa-86b0-4868-a5a6-6bd769e1a4bc"
+              LastKnownName="Gestionar Usuario"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fbbdf4f7-5b83-40e8-ae07-452101231f33"
+        name="Actualizar Cuestionario"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="134de235-46d0-409e-b7a3-99631b787d93">
+            <useCaseMoniker
+              Id="59ed74ca-e877-44cc-a9ec-0716265bd912"
+              LastKnownName="Gestionar Cuestionario"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3344bec0-02b1-49d9-9555-438f0be720a2"
+        name="Agregar Cuestionario"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="30273648-1b62-4ffd-a815-6152d7c4e104">
+            <useCaseMoniker
+              Id="59ed74ca-e877-44cc-a9ec-0716265bd912"
+              LastKnownName="Gestionar Cuestionario"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6a3f8640-4385-497d-8145-eaa8c0ca404e"
+        name="Actualizar Pregunta"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="d14cc36e-6b1c-4067-ae53-91d28d69fc9a">
+            <useCaseMoniker
+              Id="d6eae8ea-4ea3-4e2f-a650-a578bdea669e"
+              LastKnownName="Gestionar Pregunta"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="89ea4777-c559-4958-9132-fc16b6160421"
+        name="Agregar Pregunta"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="125d6ee4-db94-4bda-813e-3e025f5e2348">
+            <useCaseMoniker
+              Id="d6eae8ea-4ea3-4e2f-a650-a578bdea669e"
+              LastKnownName="Gestionar Pregunta"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0a784a49-af33-4cd0-99af-7914f391fbcb"
+        name="Actualizar Alternativa"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="8c1b5297-1f18-4c2c-bdf0-f242646e1a09">
+            <useCaseMoniker
+              Id="05cac6c3-feda-4a68-be8b-b7e7ade238a7"
+              LastKnownName="Gestionar Alternativa"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="acf81434-b5d7-4b67-8c57-f52f5427571e"
+        name="Usuario1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a29b5adc-686d-42f0-9dd2-70b01d3f85a8"
+            isDerived="false"
+            sourceEndRoleName="Usuario"
+            targetEndRoleName="Gestionar Usuario"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1823f527-33c3-4464-8089-a610d7467eee"
+              LastKnownName="Gestionar Usuario1"
+              LastKnownLocation="casosdeuso.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a2eb758-2847-4aeb-be18-c64f8a6b4278"
+                  name="Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="47b62ee6-2978-4918-b6f5-336be30f1f2c"
+                  name="Gestionar Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bc4a0038-623e-474c-85c5-84e538019488"
+            isDerived="false"
+            sourceEndRoleName="Usuario"
+            targetEndRoleName="Gestionar Cuestionario"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5c99c7d1-9b36-4d8f-bdfd-9320396ba96b"
+              LastKnownName="Gestionar Cuestionario1"
+              LastKnownLocation="casosdeuso.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="39c31b66-2c9a-4418-b67a-9b1a97de0f47"
+                  name="Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ac8bff2-81e2-4c2b-88b0-3fc4198f26cf"
+                  name="Gestionar Cuestionario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2a385721-2027-4ce4-a11e-8808d7ee2444"
+            isDerived="false"
+            sourceEndRoleName="Usuario"
+            targetEndRoleName="Gestionar Pregunta"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="56b62d2d-4834-4a6a-9ee5-7625593286df"
+              LastKnownName="Gestionar Pregunta1"
+              LastKnownLocation="casosdeuso.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a14d9ad3-6696-402b-8869-5cc536ee502d"
+                  name="Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5ddd959d-b564-43f0-97f9-d427608a73e0"
+                  name="Gestionar Pregunta"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5f774ea2-7c17-476e-9616-6f694601fdc7"
+            isDerived="false"
+            sourceEndRoleName="Usuario"
+            targetEndRoleName="Gestionar Alternativa"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b340bdc1-8ccc-458d-a244-dce8ada1ce66"
+              LastKnownName="Gestionar Alternativa1"
+              LastKnownLocation="casosdeuso.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7bd33d53-3395-46b6-8c03-bdc4a2f7497e"
+                  name="Usuario"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1e172aa4-49e8-4596-8118-c2921bb937ba"
+                  name="Gestionar Alternativa"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1823f527-33c3-4464-8089-a610d7467eee"
+        name="Gestionar Usuario1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5c99c7d1-9b36-4d8f-bdfd-9320396ba96b"
+        name="Gestionar Cuestionario1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="56b62d2d-4834-4a6a-9ee5-7625593286df"
+        name="Gestionar Pregunta1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b340bdc1-8ccc-458d-a244-dce8ada1ce66"
+        name="Gestionar Alternativa1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="394708f5-3940-4365-a4be-16fd7ece47fb"
+        name="Actualizar Usuario1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="8160d50e-7161-4d01-b8cf-960e28875d33">
+            <useCaseMoniker
+              Id="1823f527-33c3-4464-8089-a610d7467eee"
+              LastKnownName="Gestionar Usuario1"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5d67bda7-b4f2-484a-b8bb-aba831773c69"
+        name="Agregar Usuario1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="bbc758c4-0fc9-451f-a071-90d68635f57b">
+            <useCaseMoniker
+              Id="1823f527-33c3-4464-8089-a610d7467eee"
+              LastKnownName="Gestionar Usuario1"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8b66b217-4fb6-44a0-b61e-b74e5a3f7f99"
+        name="Actualizar Cuestionario1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="e4f49adc-a732-4ec7-89ca-b7b94d4c5e0f">
+            <useCaseMoniker
+              Id="5c99c7d1-9b36-4d8f-bdfd-9320396ba96b"
+              LastKnownName="Gestionar Cuestionario1"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0ffa3c96-db54-4c88-a04c-e4af80fa5a65"
+        name="Agregar Cuestionario1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="5e10d5a4-16fe-4de3-a781-a9dcf000bc4f">
+            <useCaseMoniker
+              Id="5c99c7d1-9b36-4d8f-bdfd-9320396ba96b"
+              LastKnownName="Gestionar Cuestionario1"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c20eb558-f273-4eb6-baa7-5387b5178682"
+        name="Actualizar Pregunta1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c55c77ac-0eed-4f9b-b28a-3fe2e9205ab4">
+            <useCaseMoniker
+              Id="56b62d2d-4834-4a6a-9ee5-7625593286df"
+              LastKnownName="Gestionar Pregunta1"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8bd02ea9-75ef-420f-992b-e01806baa14b"
+        name="Agregar Pregunta1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="2ce4768b-e9f5-425c-af4f-2386bc776078">
+            <useCaseMoniker
+              Id="56b62d2d-4834-4a6a-9ee5-7625593286df"
+              LastKnownName="Gestionar Pregunta1"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="28ad3b45-a473-4484-972e-629de86dbd9c"
+        name="Actualizar Alternativa1"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1221e3ce-e906-44a8-9ca6-20f207c3c4bf">
+            <useCaseMoniker
+              Id="b340bdc1-8ccc-458d-a244-dce8ada1ce66"
+              LastKnownName="Gestionar Alternativa1"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="68e828eb-955c-4b51-a0e3-980e359fd2e1"
+        name="Agregar Alternativa"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="d30a21f4-4848-43e8-bae5-a6761fdae1f1">
+            <useCaseMoniker
+              Id="b340bdc1-8ccc-458d-a244-dce8ada1ce66"
+              LastKnownName="Gestionar Alternativa1"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
