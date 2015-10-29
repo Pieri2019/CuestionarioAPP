@@ -5,32 +5,78 @@ using System.Text;
 
 namespace APPCuestionario
 {
+    /// <summary>
+    /// Clase utilizada para la representación de Alternativas
+    /// </summary>
     public class Alternativas
     {
-        public int Descripcion { get; set; }
+        /// <summary>
+        /// Describe la alternativa
+        /// </summary>
+        public string Descripcion { get; set; }
 
-        public int IDAlternativa { get; set; }
+        /// <summary>
+        /// Identificador de la Alternativa
+        /// </summary>
+        public int  IDAlternativa { get; set; }
 
+        /// <summary>
+        /// Indica si la alternativa es correcta o no
+        /// </summary>
+        public string RAlternativa { get; set; }
+        
+        /// <summary>
+        /// Lista de Alternativas por pregunta
+        /// </summary>
+        public Pregunta Pregunta { get; set; }
 
-        public int RAlternativa { get; set; }
+        /// <summary>
+        /// Constructor de la clase Alternativas
+        /// </summary>
+        private Alternativas()
+        { 
+        }
 
-
-        public ICollection<Pregunta> Preguntas { get; set; }
-
+        /// <summary>
+        /// Método que se utilizará para actualizar alternativas de una pregunta
+        /// </summary>
+        /// <param name="descrip_al">Descripción de la Alternativa</param>
+        /// <param name="r_al">Indica si el resultado es correcto o no </param>
+        /// <returns></returns>
     
-        public void Actualizar()
+        public static Alternativas Actualizar(string descrip_al, string r_al)
         {
-            throw new System.NotImplementedException();
+            return (
+                new Alternativas()
+                {
+                    Descripcion = descrip_al,
+                    RAlternativa = r_al
+
+                }
+                );
         }
 
-        public void Agregar()
+        /// <summary>
+        /// Método que se utilizará para agregar alternativas a una pregunta
+        /// </summary>
+        /// <param name="descrip_al">Descripción de la Alternativa</param>
+        /// <param name="r_al">Indica si el resultado es correcto o no </param>
+        /// <returns></returns>
+
+        public static Alternativas Agregar(string descrip_al, string r_al)
         {
-            throw new System.NotImplementedException();
+            return (
+                new Alternativas
+                {
+                    Descripcion= descrip_al,
+                    RAlternativa=r_al
+
+                });
         }
 
-        public void Eliminar()
+        public void Eliminar(Pregunta ao_pregunta)
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }
