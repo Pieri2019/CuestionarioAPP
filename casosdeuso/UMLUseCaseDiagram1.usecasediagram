@@ -6,7 +6,7 @@
         <elementDefinition Id="acf81434-b5d7-4b67-8c57-f52f5427571e" />
         <targetEnds>
           <association Id="688d42e5-5c3d-48f1-ae6d-93ab58fd4b98" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Gestionar Usuario" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="9ee747d2-14d5-454f-a668-e266c475208a" LastKnownName="Gestionar Usuario1" />
+            <useCaseMoniker Id="9ee747d2-14d5-454f-a668-e266c475208a" LastKnownName="Gestionar Usuario" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="0c5e373b-621f-477b-9b38-42a116bae9d4" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -22,7 +22,7 @@
             <elementDefinition Id="a29b5adc-686d-42f0-9dd2-70b01d3f85a8" />
           </association>
           <association Id="356b95b1-aa3e-4bb3-9379-1b47ee350d96" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Gestionar Cuestionario" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="1850f0e6-68fa-420f-9c7e-37e4858edacf" LastKnownName="Gestionar Cuestionario1" />
+            <useCaseMoniker Id="1850f0e6-68fa-420f-9c7e-37e4858edacf" LastKnownName="Gestionar Cuestionario" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="475550e4-fba7-4cb7-9e5d-dbc0e23f7826" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -38,7 +38,7 @@
             <elementDefinition Id="bc4a0038-623e-474c-85c5-84e538019488" />
           </association>
           <association Id="0a3a8ccd-22ca-486f-8da2-f5298f9dab7d" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Gestionar Pregunta" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="99d20fd0-d3fe-499c-8110-6c35cac5ae99" LastKnownName="Gestionar Pregunta1" />
+            <useCaseMoniker Id="99d20fd0-d3fe-499c-8110-6c35cac5ae99" LastKnownName="Gestionar Pregunta" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="e12e122d-4216-425d-b9e2-833cdca3e350" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -54,7 +54,7 @@
             <elementDefinition Id="2a385721-2027-4ce4-a11e-8808d7ee2444" />
           </association>
           <association Id="42663713-b4e9-4e8e-a558-7128c29461b4" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Gestionar Alternativa" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="b0dc7ed0-dfd3-48d5-bf13-491d713f5967" LastKnownName="Gestionar Alternativa1" />
+            <useCaseMoniker Id="b0dc7ed0-dfd3-48d5-bf13-491d713f5967" LastKnownName="Gestionar Alternativa" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="3bb7b6d3-7a5e-4389-b282-b2322ca6b0a5" name="Usuario" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -73,97 +73,97 @@
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="9ee747d2-14d5-454f-a668-e266c475208a" name="Gestionar Usuario1" isAbstract="false" isLeaf="false">
+      <useCase Id="9ee747d2-14d5-454f-a668-e266c475208a" name="Gestionar Usuario" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1823f527-33c3-4464-8089-a610d7467eee" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="1850f0e6-68fa-420f-9c7e-37e4858edacf" name="Gestionar Cuestionario1" isAbstract="false" isLeaf="false">
+      <useCase Id="1850f0e6-68fa-420f-9c7e-37e4858edacf" name="Gestionar Cuestionario" isAbstract="false" isLeaf="false">
         <elementDefinition Id="5c99c7d1-9b36-4d8f-bdfd-9320396ba96b" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="99d20fd0-d3fe-499c-8110-6c35cac5ae99" name="Gestionar Pregunta1" isAbstract="false" isLeaf="false">
+      <useCase Id="99d20fd0-d3fe-499c-8110-6c35cac5ae99" name="Gestionar Pregunta" isAbstract="false" isLeaf="false">
         <elementDefinition Id="56b62d2d-4834-4a6a-9ee5-7625593286df" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="b0dc7ed0-dfd3-48d5-bf13-491d713f5967" name="Gestionar Alternativa1" isAbstract="false" isLeaf="false">
+      <useCase Id="b0dc7ed0-dfd3-48d5-bf13-491d713f5967" name="Gestionar Alternativa" isAbstract="false" isLeaf="false">
         <elementDefinition Id="b340bdc1-8ccc-458d-a244-dce8ada1ce66" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="dcddaf60-9a98-4c3c-a3d4-d23f71c46eaa" name="Actualizar Usuario1" isAbstract="false" isLeaf="false">
+      <useCase Id="dcddaf60-9a98-4c3c-a3d4-d23f71c46eaa" name="Actualizar Usuario" isAbstract="false" isLeaf="false">
         <elementDefinition Id="394708f5-3940-4365-a4be-16fd7ece47fb" />
         <extendedCases>
           <extend Id="66fb95d7-d19e-48f3-90dc-f898b0e5393a">
-            <useCaseMoniker Id="9ee747d2-14d5-454f-a668-e266c475208a" LastKnownName="Gestionar Usuario1" />
+            <useCaseMoniker Id="9ee747d2-14d5-454f-a668-e266c475208a" LastKnownName="Gestionar Usuario" />
             <elementDefinition Id="8160d50e-7161-4d01-b8cf-960e28875d33" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="e5d5bdcc-b4ce-44d9-b261-11347778f581" name="Agregar Usuario1" isAbstract="false" isLeaf="false">
+      <useCase Id="e5d5bdcc-b4ce-44d9-b261-11347778f581" name="Agregar Usuario" isAbstract="false" isLeaf="false">
         <elementDefinition Id="5d67bda7-b4f2-484a-b8bb-aba831773c69" />
         <extendedCases>
           <extend Id="0e35475b-64aa-4676-9c71-441c9a6af637">
-            <useCaseMoniker Id="9ee747d2-14d5-454f-a668-e266c475208a" LastKnownName="Gestionar Usuario1" />
+            <useCaseMoniker Id="9ee747d2-14d5-454f-a668-e266c475208a" LastKnownName="Gestionar Usuario" />
             <elementDefinition Id="bbc758c4-0fc9-451f-a071-90d68635f57b" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="f01da29e-e0a7-4d50-bc00-087e7d8c2174" name="Actualizar Cuestionario1" isAbstract="false" isLeaf="false">
+      <useCase Id="f01da29e-e0a7-4d50-bc00-087e7d8c2174" name="Actualizar Cuestionario" isAbstract="false" isLeaf="false">
         <elementDefinition Id="8b66b217-4fb6-44a0-b61e-b74e5a3f7f99" />
         <extendedCases>
           <extend Id="c7d9048c-7b3e-4f23-aef2-a05bc64eb622">
-            <useCaseMoniker Id="1850f0e6-68fa-420f-9c7e-37e4858edacf" LastKnownName="Gestionar Cuestionario1" />
+            <useCaseMoniker Id="1850f0e6-68fa-420f-9c7e-37e4858edacf" LastKnownName="Gestionar Cuestionario" />
             <elementDefinition Id="e4f49adc-a732-4ec7-89ca-b7b94d4c5e0f" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="7a671f2b-9e82-4f96-8a8c-6e87f9c9d867" name="Agregar Cuestionario1" isAbstract="false" isLeaf="false">
+      <useCase Id="7a671f2b-9e82-4f96-8a8c-6e87f9c9d867" name="Agregar Cuestionario" isAbstract="false" isLeaf="false">
         <elementDefinition Id="0ffa3c96-db54-4c88-a04c-e4af80fa5a65" />
         <extendedCases>
           <extend Id="a1613a68-3e44-490c-9c8e-e0d8fe2efe85">
-            <useCaseMoniker Id="1850f0e6-68fa-420f-9c7e-37e4858edacf" LastKnownName="Gestionar Cuestionario1" />
+            <useCaseMoniker Id="1850f0e6-68fa-420f-9c7e-37e4858edacf" LastKnownName="Gestionar Cuestionario" />
             <elementDefinition Id="5e10d5a4-16fe-4de3-a781-a9dcf000bc4f" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="4b790b81-479a-4ccf-a4a0-a4998d45fee9" name="Actualizar Pregunta1" isAbstract="false" isLeaf="false">
+      <useCase Id="4b790b81-479a-4ccf-a4a0-a4998d45fee9" name="Actualizar Pregunta" isAbstract="false" isLeaf="false">
         <elementDefinition Id="c20eb558-f273-4eb6-baa7-5387b5178682" />
         <extendedCases>
           <extend Id="c9559198-f709-4539-8f81-eb6aff358a71">
-            <useCaseMoniker Id="99d20fd0-d3fe-499c-8110-6c35cac5ae99" LastKnownName="Gestionar Pregunta1" />
+            <useCaseMoniker Id="99d20fd0-d3fe-499c-8110-6c35cac5ae99" LastKnownName="Gestionar Pregunta" />
             <elementDefinition Id="c55c77ac-0eed-4f9b-b28a-3fe2e9205ab4" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="ac51b23e-37f9-4a15-8a7f-9be55c988b7a" name="Agregar Pregunta1" isAbstract="false" isLeaf="false">
+      <useCase Id="ac51b23e-37f9-4a15-8a7f-9be55c988b7a" name="Agregar Pregunta" isAbstract="false" isLeaf="false">
         <elementDefinition Id="8bd02ea9-75ef-420f-992b-e01806baa14b" />
         <extendedCases>
           <extend Id="33882ae8-de11-4371-b493-005f05b97000">
-            <useCaseMoniker Id="99d20fd0-d3fe-499c-8110-6c35cac5ae99" LastKnownName="Gestionar Pregunta1" />
+            <useCaseMoniker Id="99d20fd0-d3fe-499c-8110-6c35cac5ae99" LastKnownName="Gestionar Pregunta" />
             <elementDefinition Id="2ce4768b-e9f5-425c-af4f-2386bc776078" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="2bb6686c-f73c-4e0b-9313-c36b610dab9b" name="Actualizar Alternativa1" isAbstract="false" isLeaf="false">
+      <useCase Id="2bb6686c-f73c-4e0b-9313-c36b610dab9b" name="Actualizar Alternativa" isAbstract="false" isLeaf="false">
         <elementDefinition Id="28ad3b45-a473-4484-972e-629de86dbd9c" />
         <extendedCases>
           <extend Id="4bd30fe4-77b0-4249-b852-574b37bbba1a">
-            <useCaseMoniker Id="b0dc7ed0-dfd3-48d5-bf13-491d713f5967" LastKnownName="Gestionar Alternativa1" />
+            <useCaseMoniker Id="b0dc7ed0-dfd3-48d5-bf13-491d713f5967" LastKnownName="Gestionar Alternativa" />
             <elementDefinition Id="1221e3ce-e906-44a8-9ca6-20f207c3c4bf" />
           </extend>
         </extendedCases>
@@ -174,7 +174,7 @@
         <elementDefinition Id="68e828eb-955c-4b51-a0e3-980e359fd2e1" />
         <extendedCases>
           <extend Id="acb452c9-d170-4bfb-8a25-9b486e235176">
-            <useCaseMoniker Id="b0dc7ed0-dfd3-48d5-bf13-491d713f5967" LastKnownName="Gestionar Alternativa1" />
+            <useCaseMoniker Id="b0dc7ed0-dfd3-48d5-bf13-491d713f5967" LastKnownName="Gestionar Alternativa" />
             <elementDefinition Id="d30a21f4-4848-43e8-bae5-a6761fdae1f1" />
           </extend>
         </extendedCases>
