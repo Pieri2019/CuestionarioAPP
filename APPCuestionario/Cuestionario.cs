@@ -5,36 +5,119 @@ using System.Text;
 
 namespace APPCuestionario
 {
+    /// <summary>
+    /// Clase utilizada para la representación de un Cuestionario
+    /// </summary>
     public class Cuestionario
     {
-        public int Descripcion { get; set; }
+        /// <summary>
+        /// Descripción del cuestionario
+        /// </summary>
+        public string Descripcion { get; set; }
 
-        public int FechaFin { get; set; }
+        /// <summary>
+        /// Fecha de finalizacion del cuestionario
+        /// </summary>
+        public DateTime FechaFin { get; set; }
 
-        public int FechaInicio { get; set; }
+        /// <summary>
+        /// Fecha de inicio del cuestionario
+        /// </summary>
+        public DateTime FechaInicio { get; set; }
 
+        /// <summary>
+        /// Identificador del cuestionario
+        /// </summary>
         public int IDCuestionario { get; set; }
 
-        public int NPreguntas { get; set; }
 
+        /// <summary>
+        /// Identificador de la posición del cuestionario
+        /// </summary>
         public int Orden { get; set; }
 
-        public int Tiempo { get; set; }
+        /// <summary>
+        /// Tiempo de duración del cuestionario
+        /// </summary>
+        public DateTime Tiempo { get; set; }
 
-        public int Titulo { get; set; }
+        /// <summary>
+        /// Titulo del cuestionario
+        /// </summary>
+        public string Titulo { get; set; }
+
+        /// <summary>
+        /// Lista de estados del cuestionario
+        /// </summary>
         public ICollection<EstadoDeCuestionario> EstadoDeCuestionarios { get; set; }
+
+        /// <summary>
+        /// Lista de usuarios disponibles por cuestionario
+        /// </summary>
         public ICollection<Usuario> Usuarios { get; set; }
+
+        /// <summary>
+        /// Lista de preguntas por cuestionario
+        /// </summary>
         public ICollection<Pregunta> Preguntas { get; set; }
 
-    
-        public void Actualizar()
+        /// <summary>
+        /// Constructor de la clase Cuestionario
+        /// </summary>
+        /// 
+        private Cuestionario() { 
+        
+        }
+        /// <summary>
+        /// Método que se utilizará para actualizar la información de un cuestionario
+        /// </summary>
+        /// <param name="descrip_cues">Descripcion del cuestionario</param>
+        /// <param name="fecfin_cues">Fecha de finalizacion del cuestionario</param>
+        /// <param name="fecini_cues">Fecga de inicio del cuestionario</param>
+        /// <param name="orden_cues">Identificador de la posición del cuestionario</param>
+        /// <param name="tiemp_cues">Tiempo de duracion del cuestionario</param>
+        /// <param name="titu_cues">Titulo del cuestionario</param>
+        /// <returns></returns>
+        public static Cuestionario Actualizar(string descrip_cues, DateTime fecfin_cues, DateTime fecini_cues, int orden_cues, DateTime tiemp_cues, string titu_cues)
         {
-            throw new System.NotImplementedException();
+          return (
+            new Cuestionario()
+            {
+                Descripcion = descrip_cues,
+                FechaFin = fecfin_cues,
+                FechaInicio = fecini_cues,
+                Orden= orden_cues,
+                Tiempo = tiemp_cues,
+                Titulo = titu_cues
+
+            }
+            );
         }
 
-        public void Agregar()
+        /// <summary>
+        /// Método que se utilizará para agregar un cuestionario
+        /// </summary>
+                /// <param name="descrip_cues">Descripcion del cuestionario</param>
+                /// <param name="fecfin_cues">Fecha de finalizacion del cuestionario</param>
+                /// <param name="fecini_cues">Fecga de inicio del cuestionario</param>
+                /// <param name="orden_cues">Identificador de la posición del cuestionario</param>
+                /// <param name="tiemp_cues">Tiempo de duracion del cuestionario</param>
+                /// <param name="titu_cues">Titulo del cuestionario</param>
+        /// <returns></returns>
+        public static Cuestionario Agregar(string descrip_cues, DateTime fecfin_cues, DateTime fecini_cues, int orden_cues, DateTime tiemp_cues, string titu_cues)
         {
-            throw new System.NotImplementedException();
+        return (
+            new Cuestionario()
+            {
+                Descripcion = descrip_cues,
+                FechaFin = fecfin_cues,
+                FechaInicio = fecini_cues,
+                Orden= orden_cues,
+                Tiempo = tiemp_cues,
+                Titulo = titu_cues
+
+            }
+            );
         }
     }
 }
