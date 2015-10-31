@@ -22,10 +22,7 @@ namespace APPCuestionario
         /// Identificador del Usuario
         /// </summary>
         public int IDUsuario { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
-        public int Login { get; set; }
+
         /// <summary>
         /// Nombre del Usuario
         /// </summary>
@@ -63,7 +60,7 @@ namespace APPCuestionario
                 {
                     Nombre = nomb_usu,
                     Apellido = ape_usu,
-                    Contraseña = con_usu,
+                    Contraseña = con_usu
                 }
                 );
 
