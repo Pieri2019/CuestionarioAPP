@@ -1,54 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="APPCuestionario.Usuario">
-    <Position X="0.5" Y="0.75" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Usuario" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAAQAAAAAAIEAAAAgAQAAAAAAgAIAAAQAAAEAAA=</HashCode>
+      <HashCode>AAAAAAAQAAAAAAIEAAAAgAQAAAAAAgAIAAAAAAAAAAA=</HashCode>
       <FileName>Usuario.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Cuestionarios" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="APPCuestionario.Cuestionario">
-    <Position X="3" Y="0.75" Width="1.5" />
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Cuestionario" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAIAQAAAAACAAAIAAAAABAgAAAAAIAAAAAQAwEhA=</HashCode>
+      <HashCode>AAAQAIAQAAAAAAAAAAAAAAQBAgAAAAAIQAAAAQCwABg=</HashCode>
       <FileName>Cuestionario.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="EstadoDeCuestionarios" />
-      <Property Name="Preguntas" />
-      <Property Name="Usuarios" />
-    </ShowAsCollectionAssociation>
+    <ShowAsAssociation>
+      <Property Name="Estado" />
+      <Property Name="Creador" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="APPCuestionario.Pregunta">
-    <Position X="6" Y="0.75" Width="1.5" />
+    <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAQAAQQAAAAAAAAAAABAAAAAAAIAAAAEAAEAAA=</HashCode>
+      <HashCode>AAAAAIAQAAQAAgAAAAAAAAABAAAAAAAIAAAAEAAAAAA=</HashCode>
       <FileName>Pregunta.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Cuestionarios" />
-      <Property Name="Alternativas" />
-    </ShowAsCollectionAssociation>
+    <ShowAsAssociation>
+      <Property Name="Cuestionario" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="APPCuestionario.Alternativas">
-    <Position X="8.75" Y="0.75" Width="1.5" />
+  <Class Name="APPCuestionario.Alternativa">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Alternativa" Hidden="true" />
+    </Members>
     <TypeIdentifier>
-      <HashCode>AAAAAAIQAAQAQCAAAAAAAAABAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAEAAIQAAQAACAAAAAAAAABAAAAAAAIAAAAEAAAAAA=</HashCode>
       <FileName>Alternativas.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Preguntas" />
-    </ShowAsCollectionAssociation>
+    <ShowAsAssociation>
+      <Property Name="Pregunta" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="APPCuestionario.EstadoDeCuestionario">
-    <Position X="6" Y="3.75" Width="1.5" />
+    <Position X="6" Y="3" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAQAAAAAAAAAAAAAAABAAAAAAAIAAAAAACAAAA=</HashCode>
       <FileName>EstadoDeCuestionario.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="APPCuestionario.CuestionarioResuelto">
+    <Position X="3" Y="4.5" Width="2" />
+    <AssociationLine Name="Cuestionario" Type="APPCuestionario.Cuestionario">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.027" Y="0.28" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Solucionador" Type="APPCuestionario.Usuario">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.069" Y="1.589" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAABAIAAAAAAAgIAAAAAIAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CuestionarioResuelto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Cuestionario" />
+      <Property Name="Solucionador" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

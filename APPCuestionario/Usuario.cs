@@ -34,7 +34,7 @@ namespace APPCuestionario
         /// <summary>
         /// Lista de Cuestionarios
         /// </summary>
-        public ICollection<Cuestionario> Cuestionarios { get; set; }
+        //public ICollection<Cuestionario> Cuestionarios { get; set; }
 
         /// <summary>
         /// Constructor de la clase Usuario

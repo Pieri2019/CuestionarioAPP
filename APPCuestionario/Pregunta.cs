@@ -11,9 +11,11 @@ namespace APPCuestionario
 
         public int IDPregunta { get; set; }
 
-        public ICollection<Cuestionario> Cuestionarios { get; set; }
+        public int IDCuestionario { get; set; }
 
-        public ICollection<Alternativas> Alternativas { get; set; }
+        public Cuestionario Cuestionario { get; set; }
+
+        //public ICollection<Alternativa> Alternativas { get; set; }
 
     
         public void Actualizar()

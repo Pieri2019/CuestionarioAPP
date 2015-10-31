@@ -46,20 +46,22 @@ namespace APPCuestionario
         /// </summary>
         public string Titulo { get; set; }
 
+        public int IDEstadoDeCuestionario { get; set; }
         /// <summary>
         /// Lista de estados del cuestionario
         /// </summary>
-        public ICollection<EstadoDeCuestionario> EstadoDeCuestionarios { get; set; }
+        public EstadoDeCuestionario Estado { get; set; }
 
+        public int IDUsuario { get; set; }
         /// <summary>
         /// Lista de usuarios disponibles por cuestionario
         /// </summary>
-        public ICollection<Usuario> Usuarios { get; set; }
+        public Usuario Creador { get; set; }
 
         /// <summary>
         /// Lista de preguntas por cuestionario
         /// </summary>
-        public ICollection<Pregunta> Preguntas { get; set; }
+        //public ICollection<Pregunta> Preguntas { get; set; }
 
         /// <summary>
         /// Constructor de la clase Cuestionario
@@ -67,6 +69,10 @@ namespace APPCuestionario
         /// 
         private Cuestionario() { 
         
+        }
+        public void Anular()
+        {
+            IDEstadoDeCuestionario = 3;
         }
         /// <summary>
         /// Método que se utilizará para actualizar la información de un cuestionario
@@ -78,20 +84,14 @@ namespace APPCuestionario
         /// <param name="tiemp_cues">Tiempo de duracion del cuestionario</param>
         /// <param name="titu_cues">Titulo del cuestionario</param>
         /// <returns></returns>
-        public static Cuestionario Actualizar(string descrip_cues, DateTime fecfin_cues, DateTime fecini_cues, int orden_cues, DateTime tiemp_cues, string titu_cues)
+        public void Actualizar(string descrip_cues, DateTime fecfin_cues, DateTime fecini_cues, int orden_cues, DateTime tiemp_cues, string titu_cues)
         {
-          return (
-            new Cuestionario()
-            {
-                Descripcion = descrip_cues,
-                FechaFin = fecfin_cues,
-                FechaInicio = fecini_cues,
-                Orden= orden_cues,
-                Tiempo = tiemp_cues,
-                Titulo = titu_cues
-
-            }
-            );
+            Descripcion = descrip_cues;
+            FechaFin = fecfin_cues;
+            FechaInicio = fecini_cues;
+            Orden= orden_cues;
+            Tiempo = tiemp_cues;
+            Titulo = titu_cues;
         }
 
         /// <summary>
@@ -115,7 +115,6 @@ namespace APPCuestionario
                 Orden= orden_cues,
                 Tiempo = tiemp_cues,
                 Titulo = titu_cues
-
             }
             );
         }

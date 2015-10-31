@@ -8,7 +8,7 @@ namespace APPCuestionario
     /// <summary>
     /// Clase utilizada para la representación de Alternativas
     /// </summary>
-    public class Alternativas
+    public class Alternativa
     {
         /// <summary>
         /// Describe la alternativa
@@ -18,13 +18,14 @@ namespace APPCuestionario
         /// <summary>
         /// Identificador de la Alternativa
         /// </summary>
-        public int  IDAlternativa { get; set; }
+        public int IDAlternativa { get; set; }
 
         /// <summary>
         /// Indica si la alternativa es correcta o no
         /// </summary>
-        public string RAlternativa { get; set; }
-        
+        public bool EsCorrecta { get; set; }
+
+        public int IDPregunta { get; set; }
         /// <summary>
         /// Lista de Alternativas por pregunta
         /// </summary>
@@ -33,7 +34,7 @@ namespace APPCuestionario
         /// <summary>
         /// Constructor de la clase Alternativas
         /// </summary>
-        private Alternativas()
+        private Alternativa()
         { 
         }
 
@@ -44,10 +45,10 @@ namespace APPCuestionario
         /// <param name="r_al">Indica si el resultado es correcto o no </param>
         /// <returns></returns>
     
-        public static Alternativas Actualizar(string descrip_al, string r_al)
+        public static Alternativa Actualizar(string descrip_al, string r_al)
         {
             return (
-                new Alternativas()
+                new Alternativa()
                 {
                     Descripcion = descrip_al,
                     RAlternativa = r_al
@@ -63,10 +64,10 @@ namespace APPCuestionario
         /// <param name="r_al">Indica si el resultado es correcto o no </param>
         /// <returns></returns>
 
-        public static Alternativas Agregar(string descrip_al, string r_al)
+        public static Alternativa Agregar(string descrip_al, string r_al)
         {
             return (
-                new Alternativas
+                new Alternativa
                 {
                     Descripcion= descrip_al,
                     RAlternativa=r_al
