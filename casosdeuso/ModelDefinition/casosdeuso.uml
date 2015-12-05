@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="acadf707-a5ea-4002-bbfa-be464457c7ae"
   name="casosdeuso" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -334,7 +334,7 @@
     <packageHasNamedElement>
       <actor
         Id="acf81434-b5d7-4b67-8c57-f52f5427571e"
-        name="Usuario1"
+        name="Usuario"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
@@ -347,7 +347,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="1823f527-33c3-4464-8089-a610d7467eee"
-              LastKnownName="Gestionar Usuario1"
+              LastKnownName="Gestionar Usuario"
               LastKnownLocation="casosdeuso.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -386,7 +386,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="5c99c7d1-9b36-4d8f-bdfd-9320396ba96b"
-              LastKnownName="Gestionar Cuestionario1"
+              LastKnownName="Gestionar Cuestionario"
               LastKnownLocation="casosdeuso.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -425,7 +425,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="56b62d2d-4834-4a6a-9ee5-7625593286df"
-              LastKnownName="Gestionar Pregunta1"
+              LastKnownName="Gestionar Pregunta"
               LastKnownLocation="casosdeuso.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -464,7 +464,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="b340bdc1-8ccc-458d-a244-dce8ada1ce66"
-              LastKnownName="Gestionar Alternativa1"
+              LastKnownName="Gestionar Alternativa"
               LastKnownLocation="casosdeuso.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -500,35 +500,35 @@
     <packageHasNamedElement>
       <useCase
         Id="1823f527-33c3-4464-8089-a610d7467eee"
-        name="Gestionar Usuario1"
+        name="Gestionar Usuario"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="5c99c7d1-9b36-4d8f-bdfd-9320396ba96b"
-        name="Gestionar Cuestionario1"
+        name="Gestionar Cuestionario"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="56b62d2d-4834-4a6a-9ee5-7625593286df"
-        name="Gestionar Pregunta1"
+        name="Gestionar Pregunta"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="b340bdc1-8ccc-458d-a244-dce8ada1ce66"
-        name="Gestionar Alternativa1"
+        name="Gestionar Alternativa"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="394708f5-3940-4365-a4be-16fd7ece47fb"
-        name="Actualizar Usuario1"
+        name="Actualizar Usuario"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -536,7 +536,7 @@
             Id="8160d50e-7161-4d01-b8cf-960e28875d33">
             <useCaseMoniker
               Id="1823f527-33c3-4464-8089-a610d7467eee"
-              LastKnownName="Gestionar Usuario1"
+              LastKnownName="Gestionar Usuario"
               LastKnownLocation="casosdeuso.uml" />
           </extend>
         </extendedCases>
@@ -545,7 +545,7 @@
     <packageHasNamedElement>
       <useCase
         Id="5d67bda7-b4f2-484a-b8bb-aba831773c69"
-        name="Agregar Usuario1"
+        name="Agregar Usuario"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -553,7 +553,7 @@
             Id="bbc758c4-0fc9-451f-a071-90d68635f57b">
             <useCaseMoniker
               Id="1823f527-33c3-4464-8089-a610d7467eee"
-              LastKnownName="Gestionar Usuario1"
+              LastKnownName="Gestionar Usuario"
               LastKnownLocation="casosdeuso.uml" />
           </extend>
         </extendedCases>
@@ -562,7 +562,7 @@
     <packageHasNamedElement>
       <useCase
         Id="8b66b217-4fb6-44a0-b61e-b74e5a3f7f99"
-        name="Actualizar Cuestionario1"
+        name="Actualizar Cuestionario"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -570,7 +570,7 @@
             Id="e4f49adc-a732-4ec7-89ca-b7b94d4c5e0f">
             <useCaseMoniker
               Id="5c99c7d1-9b36-4d8f-bdfd-9320396ba96b"
-              LastKnownName="Gestionar Cuestionario1"
+              LastKnownName="Gestionar Cuestionario"
               LastKnownLocation="casosdeuso.uml" />
           </extend>
         </extendedCases>
@@ -579,7 +579,7 @@
     <packageHasNamedElement>
       <useCase
         Id="0ffa3c96-db54-4c88-a04c-e4af80fa5a65"
-        name="Agregar Cuestionario1"
+        name="Generar Cuestionario"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -587,7 +587,7 @@
             Id="5e10d5a4-16fe-4de3-a781-a9dcf000bc4f">
             <useCaseMoniker
               Id="5c99c7d1-9b36-4d8f-bdfd-9320396ba96b"
-              LastKnownName="Gestionar Cuestionario1"
+              LastKnownName="Gestionar Cuestionario"
               LastKnownLocation="casosdeuso.uml" />
           </extend>
         </extendedCases>
@@ -596,7 +596,7 @@
     <packageHasNamedElement>
       <useCase
         Id="c20eb558-f273-4eb6-baa7-5387b5178682"
-        name="Actualizar Pregunta1"
+        name="Actualizar Pregunta"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -604,7 +604,7 @@
             Id="c55c77ac-0eed-4f9b-b28a-3fe2e9205ab4">
             <useCaseMoniker
               Id="56b62d2d-4834-4a6a-9ee5-7625593286df"
-              LastKnownName="Gestionar Pregunta1"
+              LastKnownName="Gestionar Pregunta"
               LastKnownLocation="casosdeuso.uml" />
           </extend>
         </extendedCases>
@@ -613,7 +613,7 @@
     <packageHasNamedElement>
       <useCase
         Id="8bd02ea9-75ef-420f-992b-e01806baa14b"
-        name="Agregar Pregunta1"
+        name="Agregar Pregunta"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -621,7 +621,7 @@
             Id="2ce4768b-e9f5-425c-af4f-2386bc776078">
             <useCaseMoniker
               Id="56b62d2d-4834-4a6a-9ee5-7625593286df"
-              LastKnownName="Gestionar Pregunta1"
+              LastKnownName="Gestionar Pregunta"
               LastKnownLocation="casosdeuso.uml" />
           </extend>
         </extendedCases>
@@ -630,7 +630,7 @@
     <packageHasNamedElement>
       <useCase
         Id="28ad3b45-a473-4484-972e-629de86dbd9c"
-        name="Actualizar Alternativa1"
+        name="Actualizar Alternativa"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
@@ -638,7 +638,7 @@
             Id="1221e3ce-e906-44a8-9ca6-20f207c3c4bf">
             <useCaseMoniker
               Id="b340bdc1-8ccc-458d-a244-dce8ada1ce66"
-              LastKnownName="Gestionar Alternativa1"
+              LastKnownName="Gestionar Alternativa"
               LastKnownLocation="casosdeuso.uml" />
           </extend>
         </extendedCases>
@@ -655,7 +655,89 @@
             Id="d30a21f4-4848-43e8-bae5-a6761fdae1f1">
             <useCaseMoniker
               Id="b340bdc1-8ccc-458d-a244-dce8ada1ce66"
-              LastKnownName="Gestionar Alternativa1"
+              LastKnownName="Gestionar Alternativa"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4dce14fc-0f8e-428a-b8cf-1ef9b7aff1be"
+        name="Anular Pregunta"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c81a9dfa-7ee1-4894-a4c1-cae3279ab63c">
+            <useCaseMoniker
+              Id="56b62d2d-4834-4a6a-9ee5-7625593286df"
+              LastKnownName="Gestionar Pregunta"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="23cfda39-e0d3-419a-9867-80eb187b63db"
+        name="Agregar Pregunta1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="48b61b6e-be7d-464d-b1cc-a0a8e485dc30"
+        name="Agregar Pregunta2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="12890ee4-b9a9-426b-9438-6c5b50cdaea5"
+        name="Anular Cuestionario"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="7b817333-4530-4431-84c0-f41b27e67800">
+            <useCaseMoniker
+              Id="5c99c7d1-9b36-4d8f-bdfd-9320396ba96b"
+              LastKnownName="Gestionar Cuestionario"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="96ddf387-21a5-4629-a9a1-7896da6ec1bd"
+        name="Publicar Cuestionario"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="07f0fe8b-ce8e-4d9b-a197-d2762b7aa45b">
+            <useCaseMoniker
+              Id="5c99c7d1-9b36-4d8f-bdfd-9320396ba96b"
+              LastKnownName="Gestionar Cuestionario"
+              LastKnownLocation="casosdeuso.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="04c296b7-ad02-44e8-a8ce-a65d5accf97a"
+        name="Realizar Cuestionario"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="54d3f300-8a35-48f7-acca-3036f12bad9c">
+            <useCaseMoniker
+              Id="5c99c7d1-9b36-4d8f-bdfd-9320396ba96b"
+              LastKnownName="Gestionar Cuestionario"
               LastKnownLocation="casosdeuso.uml" />
           </extend>
         </extendedCases>

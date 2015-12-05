@@ -61,10 +61,7 @@
     <AssociationLine Name="Cuestionario" Type="APPCuestionario.Cuestionario" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="4.25" Y="2.877" />
-        <Point X="3.875" Y="2.877" />
-        <Point X="3.875" Y="2.704" />
-        <Point X="2.786" Y="2.704" />
-        <Point X="2.786" Y="2.628" />
+        <Point X="4.25" Y="2.628" />
         <Point X="2.427" Y="2.628" />
         <Point X="2.427" Y="4" />
         <Point X="1.938" Y="4" />
@@ -92,7 +89,6 @@
       <FileName>Respuestas.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Alternativa" />
       <Property Name="CuestionarioRealizado" />
     </ShowAsAssociation>
   </Class>

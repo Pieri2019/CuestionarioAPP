@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3925cc28-89b4-402b-ba24-b961fdf25578" name="UMLUseCaseDiagram1" linkedPackageId="5edf2ceb-6e17-4b3a-a1e6-dfb319e36c20" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="3925cc28-89b4-402b-ba24-b961fdf25578" name="UMLUseCaseDiagram1" linkedPackageId="5edf2ceb-6e17-4b3a-a1e6-dfb319e36c20" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
-      <actor Id="6b6510a6-f744-4f31-a765-3fae37c91b8e" name="Usuario1" isAbstract="false" isLeaf="false">
+      <actor Id="6b6510a6-f744-4f31-a765-3fae37c91b8e" name="Usuario" isAbstract="false" isLeaf="false">
         <elementDefinition Id="acf81434-b5d7-4b67-8c57-f52f5427571e" />
         <targetEnds>
           <association Id="688d42e5-5c3d-48f1-ae6d-93ab58fd4b98" isDerived="false" sourceEndRoleName="Usuario" targetEndRoleName="Gestionar Usuario" isLeaf="false" isAbstract="false">
@@ -126,7 +126,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="7a671f2b-9e82-4f96-8a8c-6e87f9c9d867" name="Agregar Cuestionario" isAbstract="false" isLeaf="false">
+      <useCase Id="7a671f2b-9e82-4f96-8a8c-6e87f9c9d867" name="Generar Cuestionario" isAbstract="false" isLeaf="false">
         <elementDefinition Id="0ffa3c96-db54-4c88-a04c-e4af80fa5a65" />
         <extendedCases>
           <extend Id="a1613a68-3e44-490c-9c8e-e0d8fe2efe85">
@@ -176,6 +176,50 @@
           <extend Id="acb452c9-d170-4bfb-8a25-9b486e235176">
             <useCaseMoniker Id="b0dc7ed0-dfd3-48d5-bf13-491d713f5967" LastKnownName="Gestionar Alternativa" />
             <elementDefinition Id="d30a21f4-4848-43e8-bae5-a6761fdae1f1" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ce9d53fc-fe9d-4d87-998d-c4a844a829d8" name="Anular Pregunta" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4dce14fc-0f8e-428a-b8cf-1ef9b7aff1be" />
+        <extendedCases>
+          <extend Id="b060cd50-57b7-4218-8b3b-009ea6e2e1f6">
+            <useCaseMoniker Id="99d20fd0-d3fe-499c-8110-6c35cac5ae99" LastKnownName="Gestionar Pregunta" />
+            <elementDefinition Id="c81a9dfa-7ee1-4894-a4c1-cae3279ab63c" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="40c1f949-c0c3-4dd4-a32d-a501fcb738e8" name="Anular Cuestionario" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="12890ee4-b9a9-426b-9438-6c5b50cdaea5" />
+        <extendedCases>
+          <extend Id="ba353dc7-58ce-42f7-bfe8-858b418b1d35">
+            <useCaseMoniker Id="1850f0e6-68fa-420f-9c7e-37e4858edacf" LastKnownName="Gestionar Cuestionario" />
+            <elementDefinition Id="7b817333-4530-4431-84c0-f41b27e67800" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4aab9f29-0eee-4ac1-96db-4df4b88b9737" name="Publicar Cuestionario" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="96ddf387-21a5-4629-a9a1-7896da6ec1bd" />
+        <extendedCases>
+          <extend Id="83ee9adc-6b4e-469d-9293-9987bb6f2218">
+            <useCaseMoniker Id="1850f0e6-68fa-420f-9c7e-37e4858edacf" LastKnownName="Gestionar Cuestionario" />
+            <elementDefinition Id="07f0fe8b-ce8e-4d9b-a197-d2762b7aa45b" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e16bf4f1-37ec-4a50-8518-4fa26e54c546" name="Realizar Cuestionario" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="04c296b7-ad02-44e8-a8ce-a65d5accf97a" />
+        <extendedCases>
+          <extend Id="6169838d-c805-4f74-a0ff-f8161ed51857">
+            <useCaseMoniker Id="1850f0e6-68fa-420f-9c7e-37e4858edacf" LastKnownName="Gestionar Cuestionario" />
+            <elementDefinition Id="54d3f300-8a35-48f7-acca-3036f12bad9c" />
           </extend>
         </extendedCases>
       </useCase>
