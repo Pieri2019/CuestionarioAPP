@@ -10,6 +10,7 @@ namespace APPCuestionario
  /// </summary>
     public class Usuario
     {
+        #region Propiedades
         /// <summary>
         /// Apellido del Usuario
         /// </summary>
@@ -30,21 +31,20 @@ namespace APPCuestionario
         /// <summary>
         /// Rol designado al Usuario
         /// </summary>
-        public string Rol { get; set; }
+        public string EsCreador { get; set; }
 
-        /// <summary>
-        /// Lista de Cuestionarios
-        /// </summary>
-        //public ICollection<Cuestionario> Cuestionarios { get; set; }
+        #endregion
 
+        #region Constructor
         /// <summary>
         /// Constructor de la clase Usuario
         /// </summary>
         private Usuario() { 
         
         }
+        #endregion
 
-
+        #region Metodos
         /// <summary>
         /// Método que se utilizará para actualizar la información de un usuario
         /// </summary>
@@ -52,7 +52,7 @@ namespace APPCuestionario
         /// <param name="ape_usu">Apellido del usuario</param>
         /// <param name="con_usu">Contraseña del usuario</param>
         /// <returns></returns>
-        
+
         //Previamente se obtiene el ID del usuario que se desea modificar la información.
         public static Usuario Actualizar(string nomb_usu, string ape_usu, string con_usu)
         {
@@ -65,8 +65,8 @@ namespace APPCuestionario
                 }
                 );
 
-
         }
+
 
         /// <summary>
         /// Método que se utilizará para agregar un Usuario
@@ -84,11 +84,12 @@ namespace APPCuestionario
                 Nombre= nomb_usu,
                 Apellido= ape_usu,
                 Contraseña= con_usu,
-                Rol =rol_usu
+                EsCreador =rol_usu
 
                 } ) ;
 
 
         }
+        #endregion
     }
 }

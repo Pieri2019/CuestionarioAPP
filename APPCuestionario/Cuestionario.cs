@@ -10,6 +10,8 @@ namespace APPCuestionario
     /// </summary>
     public class Cuestionario
     {
+        #region Propiedades
+
         /// <summary>
         /// Descripción del cuestionario
         /// </summary>
@@ -46,11 +48,7 @@ namespace APPCuestionario
         /// </summary>
         public string Titulo { get; set; }
 
-        public int IDEstadoDeCuestionario { get; set; }
-        /// <summary>
-        /// Lista de estados del cuestionario
-        /// </summary>
-        public EstadoDeCuestionario Estado { get; set; }
+        public string EstadoCuestionario { get; set; }
 
         public int IDUsuario { get; set; }
         /// <summary>
@@ -58,19 +56,54 @@ namespace APPCuestionario
         /// </summary>
         public Usuario Creador { get; set; }
 
-        /// <summary>
-        /// Lista de preguntas por cuestionario
-        /// </summary>
-        //public ICollection<Pregunta> Preguntas { get; set; }
 
+        public virtual ICollection<CuestionarioRealizado> Realizados { get; set; }
+
+        #endregion
+
+        #region Constructor
         /// <summary>
         /// Constructor de la clase Cuestionario
         /// </summary>
-        /// 
-        private Cuestionario()
-        {
+        private Cuestionario() { }
 
+        #endregion
+
+
+        #region Metodos
+
+        /// <summary>
+        /// Método que se utilizará para agregar un cuestionario
+        /// </summary>
+        /// <param name="descrip_cues">Descripcion del cuestionario</param>
+        /// <param name="fecfin_cues">Fecha de finalizacion del cuestionario</param>
+        /// <param name="fecini_cues">Fecga de inicio del cuestionario</param>
+        /// <param name="orden_cues">Identificador de la posición del cuestionario</param>
+        /// <param name="tiemp_cues">Tiempo de duracion del cuestionario</param>
+        /// <param name="titu_cues">Titulo del cuestionario</param>
+        /// <returns></returns>
+        public static Cuestionario Generar(string descrip_cues, 
+            DateTime fecfin_cues, 
+            DateTime fecini_cues, 
+            int orden_cues, 
+            DateTime tiemp_cues, 
+            string titu_cues
+            )
+        {
+            return (
+                new Cuestionario()
+                {
+                    Descripcion = descrip_cues,
+                    FechaFin = fecfin_cues,
+                    FechaInicio = fecini_cues,
+                    Orden = orden_cues,
+                    Tiempo = tiemp_cues,
+                    Titulo = titu_cues,
+                    EstadoCuestionario = "G"
+                }
+             );
         }
+
         /// <summary>
         /// Método que se utilizará para actualizar la información de un cuestionario
         /// </summary>
@@ -91,34 +124,24 @@ namespace APPCuestionario
             Titulo = titu_cues;
         }
 
-        /// <summary>
-        /// Método que se utilizará para agregar un cuestionario
-        /// </summary>
-        /// <param name="descrip_cues">Descripcion del cuestionario</param>
-        /// <param name="fecfin_cues">Fecha de finalizacion del cuestionario</param>
-        /// <param name="fecini_cues">Fecga de inicio del cuestionario</param>
-        /// <param name="orden_cues">Identificador de la posición del cuestionario</param>
-        /// <param name="tiemp_cues">Tiempo de duracion del cuestionario</param>
-        /// <param name="titu_cues">Titulo del cuestionario</param>
-        /// <returns></returns>
-        public static Cuestionario Agregar(string descrip_cues, DateTime fecfin_cues, DateTime fecini_cues, int orden_cues, DateTime tiemp_cues, string titu_cues)
+        public void Publicar()
         {
-            return (
-                new Cuestionario()
-                {
-                    Descripcion = descrip_cues,
-                    FechaFin = fecfin_cues,
-                    FechaInicio = fecini_cues,
-                    Orden = orden_cues,
-                    Tiempo = tiemp_cues,
-                    Titulo = titu_cues
-                }
-                );
+            EstadoCuestionario = "A";
         }
 
         public void Anular()
         {
-            throw new System.NotImplementedException();
+            EstadoCuestionario = "N";
         }
+
+        public void Realizar(Tuple<DateTime,DateTime> atp_lapso, List<Respuesta> alo_respuestas, Usuario ao_usuario)
+        {
+            Realizados.Add(
+                CuestionarioRealizado.Agregar(this, atp_lapso, alo_respuestas, ao_usuario)
+                );
+        }
+
+        #endregion
+
     }
 }
