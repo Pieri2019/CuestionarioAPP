@@ -7,81 +7,35 @@ namespace APPCuestionario
 {
     public class Respuesta
     {
-        public int IDRespuesta
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
 
-            set
-            {
-            }
-        }
+        #region Propiedades
 
-        public int IDPregunta
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
+        
+        public int IDRespuesta { get; set; }
+      
 
-            set
-            {
-            }
-        }
+        public int IDPregunta { get; set; }
 
-        public int IDAlternativa
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
 
-            set
-            {
-            }
-        }
+        public int IDAlternativa { get; set; }
 
-        public Alternativa Alternativa
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
 
-            set
-            {
-            }
-        }
+        public Alternativa Alternativa { get; set; }
 
-        public int IDCuestionarioRealizado
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
 
-            set
-            {
-            }
-        }
+        public int IDCuestionarioRealizado { get; set; }
 
-        public CuestionarioRealizado CuestionarioRealizado
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
 
-            set
-            {
-            }
-        }
+        public CuestionarioRealizado CuestionarioRealizado { get; set; }
 
+        #endregion
+        #region Metodos
+
+      
         public void Resolver()
         {
-            throw new System.NotImplementedException();
-        }
+          
+        } 
+        #endregion
     }
 }

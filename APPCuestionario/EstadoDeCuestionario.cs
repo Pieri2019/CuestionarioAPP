@@ -5,21 +5,55 @@ using System.Text;
 
 namespace APPCuestionario
 {
+    /// <summary>
+    /// Clase utilizada para la representación del Estado de cuestionario
+    /// </summary>
     public class EstadoDeCuestionario
     {
-        public int Descripcion { get; set; }
 
+        #region Propiedades
+
+        /// <summary>
+        /// Descripcion del Estado
+        /// </summary>
+        public string Descripcion { get; set; }
+
+        /// <summary>
+        /// ID del estado de cuestionario
+        /// </summary>
         public int IDEstadoDeCuestionario { get; set; }
 
+        #endregion
 
-        public void Actualizar()
+        #region Constructor
+        /// <summary>
+        /// Constructor de la clase Cuestionario
+        /// </summary>
+        private EstadoDeCuestionario() { }
+
+        #endregion
+        #region Metodos
+
+
+        public void Actualizar(string descrip_estado, int id_estado)
         {
-            throw new System.NotImplementedException();
+
+            Descripcion = descrip_estado;
+            IDEstadoDeCuestionario = id_estado;
+            
         }
 
-        public void Agregar()
+        public static EstadoDeCuestionario  Agregar(string descrip_estado, int id_estado)
         {
-            throw new System.NotImplementedException();
+            return (
+                 new EstadoDeCuestionario ()
+                 {
+                     Descripcion = descrip_estado,
+                     IDEstadoDeCuestionario= id_estado
+                 }
+              );
         }
+        
+        #endregion
     }
 }

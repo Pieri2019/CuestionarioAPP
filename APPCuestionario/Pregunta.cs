@@ -4,10 +4,17 @@ using System.Linq;
 using System.Text;
 
 namespace APPCuestionario
-{
+{ 
+        /// <summary>
+        /// Clase utilizada para la representación de Pregunta
+        /// </summary>
+
     public class Pregunta
     {
-        public int Descripcion { get; set; }
+
+        #region Propiedades
+       
+        public string Descripcion { get; set; }
 
         public int IDPregunta { get; set; }
 
@@ -15,22 +22,27 @@ namespace APPCuestionario
 
         public Cuestionario Cuestionario { get; set; }
 
+        #endregion
         //public ICollection<Alternativa> Alternativas { get; set; }
 
-    
+
+        #region Metodos
+
+        
         public void Actualizar()
         {
-            throw new System.NotImplementedException();
+           
         }
 
         public void Agregar()
         {
-            throw new System.NotImplementedException();
+           
         }
 
         public void Anular()
         {
-            throw new System.NotImplementedException();
+           
         }
+        #endregion
     }
 }

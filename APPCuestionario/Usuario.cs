@@ -54,16 +54,12 @@ namespace APPCuestionario
         /// <returns></returns>
 
         //Previamente se obtiene el ID del usuario que se desea modificar la información.
-        public static Usuario Actualizar(string nomb_usu, string ape_usu, string con_usu)
+        public void Actualizar(string nomb_usu, string ape_usu, string con_usu)
         {
-            return (
-                new Usuario()
-                {
-                    Nombre = nomb_usu,
-                    Apellido = ape_usu,
-                    Contraseña = con_usu
-                }
-                );
+
+            Nombre = nomb_usu;
+            Apellido = ape_usu;
+            Contraseña = con_usu;
 
         }
 

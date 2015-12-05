@@ -55,15 +55,11 @@ namespace APPCuestionario
         /// <param name="r_al">Indica si el resultado es correcto o no </param>
         /// <returns></returns>
 
-        public static Alternativa Actualizar(string descrip_al, string r_al)
+        public void Actualizar(string descrip_al, bool r_al)
         {
-            return (
-                new Alternativa()
-                {
-                    Descripcion = descrip_al,
 
-                }
-                );
+            Descripcion = descrip_al;
+            EsCorrecta = r_al;
         }
 
         /// <summary>
@@ -73,12 +69,13 @@ namespace APPCuestionario
         /// <param name="r_al">Indica si el resultado es correcto o no </param>
         /// <returns></returns>
 
-        public static Alternativa Agregar(string descrip_al, string r_al)
+        public static Alternativa Agregar(string descrip_al, bool r_al)
         {
             return (
                 new Alternativa
                 {
                     Descripcion= descrip_al,
+                    EsCorrecta = r_al
 
                 });
         }
