@@ -13,13 +13,24 @@ namespace APPCuestionario
     {
 
         #region Propiedades
-       
+        /// <summary>
+        /// Descripcion de la Pregunta
+        /// </summary>
         public string Descripcion { get; set; }
 
+        /// <summary>
+        /// ID de la Pregunta
+        /// </summary>
         public int IDPregunta { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public int IDCuestionario { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public Cuestionario Cuestionario { get; set; }
 
         #endregion

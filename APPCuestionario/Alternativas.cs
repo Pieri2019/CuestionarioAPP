@@ -36,7 +36,6 @@ namespace APPCuestionario
         #endregion
 
         #region Constructor
-¡
         /// <summary>
         /// Constructor de la clase Alternativas
         /// </summary>
