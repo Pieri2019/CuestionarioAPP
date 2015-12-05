@@ -61,7 +61,6 @@ namespace APPCuestionario
                 new Alternativa()
                 {
                     Descripcion = descrip_al,
-                    RAlternativa = r_al
 
                 }
                 );
@@ -80,7 +79,6 @@ namespace APPCuestionario
                 new Alternativa
                 {
                     Descripcion= descrip_al,
-                    RAlternativa=r_al
 
                 });
         }
