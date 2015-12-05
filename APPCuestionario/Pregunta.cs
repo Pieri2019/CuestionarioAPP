@@ -28,7 +28,7 @@ namespace APPCuestionario
             throw new System.NotImplementedException();
         }
 
-        public void Eliminar()
+        public void Anular()
         {
             throw new System.NotImplementedException();
         }

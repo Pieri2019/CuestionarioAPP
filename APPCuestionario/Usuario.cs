@@ -31,6 +31,7 @@ namespace APPCuestionario
         /// Rol designado al Usuario
         /// </summary>
         public string Rol { get; set; }
+
         /// <summary>
         /// Lista de Cuestionarios
         /// </summary>

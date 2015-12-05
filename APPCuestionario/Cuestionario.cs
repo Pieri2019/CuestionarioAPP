@@ -67,12 +67,9 @@ namespace APPCuestionario
         /// Constructor de la clase Cuestionario
         /// </summary>
         /// 
-        private Cuestionario() { 
-        
-        }
-        public void Anular()
+        private Cuestionario()
         {
-            IDEstadoDeCuestionario = 3;
+
         }
         /// <summary>
         /// Método que se utilizará para actualizar la información de un cuestionario
@@ -89,7 +86,7 @@ namespace APPCuestionario
             Descripcion = descrip_cues;
             FechaFin = fecfin_cues;
             FechaInicio = fecini_cues;
-            Orden= orden_cues;
+            Orden = orden_cues;
             Tiempo = tiemp_cues;
             Titulo = titu_cues;
         }
@@ -97,26 +94,31 @@ namespace APPCuestionario
         /// <summary>
         /// Método que se utilizará para agregar un cuestionario
         /// </summary>
-                /// <param name="descrip_cues">Descripcion del cuestionario</param>
-                /// <param name="fecfin_cues">Fecha de finalizacion del cuestionario</param>
-                /// <param name="fecini_cues">Fecga de inicio del cuestionario</param>
-                /// <param name="orden_cues">Identificador de la posición del cuestionario</param>
-                /// <param name="tiemp_cues">Tiempo de duracion del cuestionario</param>
-                /// <param name="titu_cues">Titulo del cuestionario</param>
+        /// <param name="descrip_cues">Descripcion del cuestionario</param>
+        /// <param name="fecfin_cues">Fecha de finalizacion del cuestionario</param>
+        /// <param name="fecini_cues">Fecga de inicio del cuestionario</param>
+        /// <param name="orden_cues">Identificador de la posición del cuestionario</param>
+        /// <param name="tiemp_cues">Tiempo de duracion del cuestionario</param>
+        /// <param name="titu_cues">Titulo del cuestionario</param>
         /// <returns></returns>
         public static Cuestionario Agregar(string descrip_cues, DateTime fecfin_cues, DateTime fecini_cues, int orden_cues, DateTime tiemp_cues, string titu_cues)
         {
-        return (
-            new Cuestionario()
-            {
-                Descripcion = descrip_cues,
-                FechaFin = fecfin_cues,
-                FechaInicio = fecini_cues,
-                Orden= orden_cues,
-                Tiempo = tiemp_cues,
-                Titulo = titu_cues
-            }
-            );
+            return (
+                new Cuestionario()
+                {
+                    Descripcion = descrip_cues,
+                    FechaFin = fecfin_cues,
+                    FechaInicio = fecini_cues,
+                    Orden = orden_cues,
+                    Tiempo = tiemp_cues,
+                    Titulo = titu_cues
+                }
+                );
+        }
+
+        public void Anular()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

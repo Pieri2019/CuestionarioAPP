@@ -75,7 +75,7 @@ namespace APPCuestionario
                 });
         }
 
-        public void Eliminar(Pregunta ao_pregunta)
+        public void Anular(Pregunta ao_pregunta)
         {
             
         }
