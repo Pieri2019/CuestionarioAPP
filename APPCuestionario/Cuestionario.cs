@@ -105,7 +105,7 @@ namespace APPCuestionario
         }
 
         /// <summary>
-        /// Método que se utilizará para actualizar la información de un cuestionario
+        /// Método que se utilizará para actualizar la información de un cuestionario xxxx
         /// </summary>
         /// <param name="descrip_cues">Descripcion del cuestionario</param>
         /// <param name="fecfin_cues">Fecha de finalizacion del cuestionario</param>
