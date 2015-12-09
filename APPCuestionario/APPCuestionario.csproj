@@ -51,7 +51,6 @@
     <Compile Include="Cuestionario.cs" />
     <Compile Include="CuestionarioResuelto.cs" />
     <Compile Include="EstadoDeCuestionario.cs" />
-    <Compile Include="IEContexto.cs" />
     <Compile Include="Migrations\201510171739353_IEDb.cs" />
     <Compile Include="Migrations\201510171739353_IEDb.Designer.cs">
       <DependentUpon>201510171739353_IEDb.cs</DependentUpon>

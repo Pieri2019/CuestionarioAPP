@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APPCuestionario.Datos.EF", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APPCuestionario.Servicios.DTOs", "APPCuestionario.Servicios.DTOs\APPCuestionario.Servicios.DTOs.csproj", "{213C1034-ACDC-4C44-81EB-26EADD60818B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APPCuestionario.Servicios.WebApi", "APPCuestionario.Servicios.WebApi\APPCuestionario.Servicios.WebApi.csproj", "{B3BA92A3-B290-41E8-8AF9-4F17418F4AFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{213C1034-ACDC-4C44-81EB-26EADD60818B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{213C1034-ACDC-4C44-81EB-26EADD60818B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{213C1034-ACDC-4C44-81EB-26EADD60818B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3BA92A3-B290-41E8-8AF9-4F17418F4AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3BA92A3-B290-41E8-8AF9-4F17418F4AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3BA92A3-B290-41E8-8AF9-4F17418F4AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3BA92A3-B290-41E8-8AF9-4F17418F4AFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,5 +56,6 @@ Global
 		{37EF0878-CCD4-48AB-B3D2-EBACFB3976F4} = {86BDA330-EC06-406D-8506-48B9FF9742B8}
 		{84991C29-EFD1-4FC2-922A-9DBFBA5F2D8F} = {B1058B14-A3B6-40A2-888F-4DD2695D0221}
 		{213C1034-ACDC-4C44-81EB-26EADD60818B} = {FECD90CF-073E-4F8C-9281-7AAD1B5A9B14}
+		{B3BA92A3-B290-41E8-8AF9-4F17418F4AFB} = {FECD90CF-073E-4F8C-9281-7AAD1B5A9B14}
 	EndGlobalSection
 EndGlobal
