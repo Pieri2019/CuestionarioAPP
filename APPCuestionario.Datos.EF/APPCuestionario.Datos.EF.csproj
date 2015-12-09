@@ -58,10 +58,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contextos\IEContexto.cs" />
+    <Compile Include="Mapeos\PreguntaMapeo.cs" />
+    <Compile Include="Mapeos\RespuestaMapeo.cs" />
+    <Compile Include="Mapeos\UsuarioMapeo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Mapeos\" />
     <Folder Include="Repositorios\" />
   </ItemGroup>
   <ItemGroup>

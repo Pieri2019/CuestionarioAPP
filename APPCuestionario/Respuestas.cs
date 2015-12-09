@@ -39,6 +39,8 @@ namespace APPCuestionario
         /// </summary>
         public int IDCuestionarioRealizado { get; set; }
 
+        public Pregunta Pregunta { get; set; }
+
         /// <summary>
         /// 
         /// </summary>
