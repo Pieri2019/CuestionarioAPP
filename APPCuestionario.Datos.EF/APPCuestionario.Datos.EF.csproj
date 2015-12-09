@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contextos\IEContexto.cs" />
+    <Compile Include="Mapeos\AlternativaMapeo.cs" />
+    <Compile Include="Mapeos\CuestionarioMapeo.cs" />
     <Compile Include="Mapeos\PreguntaMapeo.cs" />
     <Compile Include="Mapeos\RespuestaMapeo.cs" />
     <Compile Include="Mapeos\UsuarioMapeo.cs" />
