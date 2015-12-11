@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contextos\IEContexto.cs" />
+    <Compile Include="Contextos\InicializadorDB.cs" />
     <Compile Include="Mapeos\AlternativaMapeo.cs" />
     <Compile Include="Mapeos\CuestionarioMapeo.cs" />
     <Compile Include="Mapeos\CuestionarioRealizadoMapeo.cs" />

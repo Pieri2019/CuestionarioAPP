@@ -10,11 +10,12 @@ namespace APPCuestionario.Datos.EF.Mapeos
         {
             ToTable("USUARIOS", "CS");
             HasKey(k => k.IDUsuario);
-            Property(p => p.IDUsuario).HasColumnName("USUARIO_ID").IsRequired().HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+            Property(p => p.IDUsuario).HasColumnName("USUARIO_ID").IsRequired();
             Property(p => p.Nombre).HasColumnName("USUARIO_NOMBRE").IsRequired();
             Property(p => p.Apellido).HasColumnName("USUARIO_APELLIDO").IsRequired();
-            Property(p => p.Contraseña).HasColumnName("USUARIO_CONSTRASEÑA").IsRequired();             
-                 
+            Property(p => p.Contraseña).HasColumnName("USUARIO_CONSTRASEÑA").IsRequired();
+            Property(p => p.EsCreador ).HasColumnName("USUARIO_ROL").IsRequired();
+
         }
     }
 }
