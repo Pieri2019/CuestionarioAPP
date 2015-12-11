@@ -11,6 +11,6 @@ namespace APPCuestionario.Repositorios
     {
         T ObtenerPorCodigo(params object[] ao_llaves);
         IQueryable<T> Listas();
-        IList<T> ObtenerPorExpresion(Expression<Func<T, bool>> ao_llaves = null, string as_incluir - null, byte aby_limite = 0);
+        IList<T> ObtenerPorExpresion(Expression<Func<T, bool>> ao_llaves = null, string as_incluir = null, byte aby_limite = 0);
     }
 }
