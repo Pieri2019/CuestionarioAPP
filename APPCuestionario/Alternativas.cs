@@ -40,7 +40,7 @@ namespace APPCuestionario
         /// Constructor de la clase Alternativas
         /// </summary>
         private Alternativa()
-        { 
+        {
         }
 
         #endregion

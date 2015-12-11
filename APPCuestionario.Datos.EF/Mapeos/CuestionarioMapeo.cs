@@ -17,7 +17,11 @@ namespace APPCuestionario.Datos.EF.Mapeos
             Property(p => p.IDUsuario).HasColumnName("USUARIO_ID").IsRequired();
             Property(p => p.Descripcion).HasColumnName("DESCRIPCION").IsRequired();
             Property(p => p.EstadoCuestionario).HasColumnName("ESTADO").IsRequired();
-            Property(p => p.)
+            Property(p => p.FechaInicio).HasColumnName("FECHA_INICIO").IsRequired();
+            Property(p => p.FechaFin).HasColumnName("FECHA_FIN").IsRequired();
+            Property(p => p.Orden).HasColumnName("ORDEN").IsRequired();
+            Property(p => p.Tiempo).HasColumnName("TIEMPO").IsRequired();
+            Property(p => p.Titulo).HasColumnName("TITULO").IsRequired();
 
             HasRequired(m => m.Creador).WithMany().HasForeignKey(f => f.IDUsuario);
            
