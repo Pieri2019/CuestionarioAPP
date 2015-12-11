@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using APPCuestionario.Datos.EF.Mapeos;
+using APPCuestionario.Datos.EF.Contextos;
 
 namespace APPCuestionario
 {
@@ -11,8 +13,8 @@ namespace APPCuestionario
     {
         public IEContexto()
             : base("IEDb")
-        { 
-        
+        {
+            Database.SetInitializer(new InicializadorDB());
         }
 
         public DbSet<EstadoDeCuestionario> EstadoDeCuestionarios { get; set; }
@@ -23,14 +25,22 @@ namespace APPCuestionario
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Usuario>().HasKey(k => k.IDUsuario);
-            modelBuilder.Entity<Cuestionario>().HasKey(k => k.IDCuestionario);
-            modelBuilder.Entity<Pregunta>().HasKey(k => k.IDPregunta);
-            modelBuilder.Entity<Alternativa>().HasKey(k => k.IDAlternativa);
-            modelBuilder.Entity<EstadoDeCuestionario>().HasKey(k => k.IDEstadoDeCuestionario);
+            modelBuilder.Configurations.Add(new UsuarioMapeo());
+            modelBuilder.Configurations.Add(new CuestionarioMapeo());
+            modelBuilder.Configurations.Add(new CuestionarioRealizadoMapeo());
+            modelBuilder.Configurations.Add(new PreguntaMapeo());
+            modelBuilder.Configurations.Add(new RespuestaMapeo());
+            modelBuilder.Configurations.Add(new AlternativaMapeo());
+
+            //           base.OnModelCreating(modelBuilder);
+            //           modelBuilder.Entity<Usuario>().HasKey(k => k.IDUsuario);
+            //            modelBuilder.Entity<Cuestionario>().HasKey(k => k.IDCuestionario);
+            //            modelBuilder.Entity<Pregunta>().HasKey(k => k.IDPregunta);
+            //            modelBuilder.Entity<Alternativa>().HasKey(k => k.IDAlternativa);
+            //            modelBuilder.Entity<EstadoDeCuestionario>().HasKey(k => k.IDEstadoDeCuestionario);
 
         }
+
 
     }
 }
