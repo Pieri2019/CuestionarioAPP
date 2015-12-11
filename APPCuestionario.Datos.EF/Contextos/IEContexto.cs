@@ -17,6 +17,10 @@ namespace APPCuestionario
             Database.SetInitializer(new InicializadorDB());
         }
 
+        public IEContexto(string nameOrConnectionString) : base(nameOrConnectionString)
+        {
+        }
+
         public DbSet<EstadoDeCuestionario> EstadoDeCuestionarios { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Cuestionario> Cuestionarios { get; set; }
