@@ -23,6 +23,8 @@ namespace APPCuestionario.Datos.EF.Contextos
             context.Usuarios.Add(Usuario03);
             context.Usuarios.Add(Usuario04);
             context.Usuarios.Add(Usuario05);
+            context.SaveChanges();
+
         }
 
     }
